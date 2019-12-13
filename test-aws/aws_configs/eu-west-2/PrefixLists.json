@@ -1,0 +1,20 @@
+{
+ "PrefixLists": [
+  {
+   "Cidrs": [
+    "52.94.15.0/24"
+   ],
+   "PrefixListId": "pl-b3a742da",
+   "PrefixListName": "com.amazonaws.eu-west-2.dynamodb"
+  },
+  {
+   "Cidrs": [
+    "52.95.150.0/24",
+    "52.92.88.0/22",
+    "52.95.148.0/23"
+   ],
+   "PrefixListId": "pl-7ca54015",
+   "PrefixListName": "com.amazonaws.eu-west-2.s3"
+  }
+ ]
+}

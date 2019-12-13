@@ -1,0 +1,651 @@
+{
+ "SecurityGroups": [
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-046eed62",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-046eed62",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-1dc49479"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-04725661",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [
+      {
+       "CidrIpv6": "::/0"
+      }
+     ],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "launch-wizard-3 created 2018-03-13T12:22:37.015-07:00",
+   "GroupId": "sg-04b81475d8a8a105d",
+   "GroupName": "launch-wizard-3",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "launch-wizard-4 created 2018-09-25T11:57:18.026-07:00",
+   "GroupId": "sg-09498c88aef88e65f",
+   "GroupName": "launch-wizard-4",
+   "IpPermissions": [
+    {
+     "FromPort": 3389,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3389,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "visa-demo",
+   "GroupId": "sg-0b139008b7203ac42",
+   "GroupName": "visa-demo-sg",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-0b3b4757a042698b6",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-0b3b4757a042698b6",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-045e0f052b4860185"
+  },
+  {
+   "Description": "launch-wizard-1 created 2017-09-13T15:40:35.261-07:00",
+   "GroupId": "sg-0c7bf86a",
+   "GroupName": "launch-wizard-1",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "38.140.26.42/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "visa-demo-sg in VPC",
+   "GroupId": "sg-0d4a7bba94df3d8f2",
+   "GroupName": "visa-demo-sg-vpc",
+   "IpPermissions": [
+    {
+     "FromPort": 80,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Web UI 80"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 80,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 9996,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Batfish v1"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9996,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 8080,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Jenkins 8080"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8080,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 50000,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Jenkins 50000"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 50000,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 9997,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Batfish v2"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9997,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-045e0f052b4860185"
+  },
+  {
+   "Description": "Security group for intentionet-dev RDS",
+   "GroupId": "sg-40ac0727",
+   "GroupName": "intentionet-dev",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "104.236.156.171/32"
+      },
+      {
+       "CidrIp": "104.236.167.119/32"
+      },
+      {
+       "CidrIp": "38.140.26.42/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-ba9f8edc",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "Elastic Search Security Group",
+   "GroupId": "sg-742a2912",
+   "GroupName": "ElasticsearchSG",
+   "IpPermissions": [
+    {
+     "FromPort": 0,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "All"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 65535,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-23b7a947"
+  },
+  {
+   "Description": "My security group",
+   "GroupId": "sg-ae70f3c8",
+   "GroupName": "my-security-group",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "38.140.26.42/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-1dc49479"
+  },
+  {
+   "Description": "Created from the RDS Management Console",
+   "GroupId": "sg-b91c3cde",
+   "GroupName": "rds-launch-wizard",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "76.80.38.42/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "launch-wizard-2 created 2017-12-08T16:15:27.890-08:00",
+   "GroupId": "sg-ba9f8edc",
+   "GroupName": "launch-wizard-2",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "Security group for intentionet-web RDS",
+   "GroupId": "sg-d1ad06b6",
+   "GroupName": "intentionet-web",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "162.243.144.192/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-72850617"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-d22724b4",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-d22724b4",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-23b7a947"
+  },
+  {
+   "Description": "Security group for intentionet-test RDS",
+   "GroupId": "sg-fefede99",
+   "GroupName": "intentionet-test",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "107.170.243.58/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "intentionet-test"
+    }
+   ],
+   "VpcId": "vpc-72850617"
+  }
+ ]
+}

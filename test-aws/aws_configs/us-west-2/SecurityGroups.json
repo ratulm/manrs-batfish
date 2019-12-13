@@ -1,0 +1,2384 @@
+{
+ "SecurityGroups": [
+  {
+   "Description": "launch-wizard-5 created 2018-03-05T22:06:05.218-08:00",
+   "GroupId": "sg-0075d6adc94c8e5ed",
+   "GroupName": "launch-wizard-5",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks that run on them",
+   "GroupId": "sg-007cd0055103fc7ac",
+   "GroupName": "WideOpenWest-SecurityGroups-1VOL95O863ZDS-ECSHostSecurityGroup-Y0WTH5N1PHTT",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-05575ed1268053e96",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 14267,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 14269,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "WideOpenWest-ECS-Hosts"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "WideOpenWest-SecurityGroups-1VOL95O863ZDS"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/WideOpenWest-SecurityGroups-1VOL95O863ZDS/8d20a130-ff3b-11e9-b6b7-02e60452d3a4"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-01345d3266f7171f7",
+   "GroupName": "twinBridges-SecurityGroups-1GAZJCKGR3J8G-LoadBalancerSecurityGroup-DCEPAGQUCB8K",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "twinBridges-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "twinBridges-SecurityGroups-1GAZJCKGR3J8G"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/twinBridges-SecurityGroups-1GAZJCKGR3J8G/0ccfaad0-f5db-11e9-80d6-061773af76fc"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-6 created 2018-03-13T20:46:31.456-07:00",
+   "GroupId": "sg-02024274caf2a64cf",
+   "GroupName": "launch-wizard-6",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the Elastic File System",
+   "GroupId": "sg-03a0655786e91956e",
+   "GroupName": "twinBridges-SecurityGroups-1GAZJCKGR3J8G-EFSSecurityGroup-1LMKFBQY8XQDL",
+   "IpPermissions": [
+    {
+     "FromPort": 2049,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 2049,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-0d42590179346945c",
+       "UserId": "118292266645"
+      },
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "twinBridges-EFS"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "twinBridges-SecurityGroups-1GAZJCKGR3J8G"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/twinBridges-SecurityGroups-1GAZJCKGR3J8G/0ccfaad0-f5db-11e9-80d6-061773af76fc"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "EFSSecurityGroup"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks that run on them",
+   "GroupId": "sg-03bf9f7e159317394",
+   "GroupName": "BP-SecurityGroups-1OEHITBS0P0YJ-ECSHostSecurityGroup-1RDTFQJNBY533",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-0639ffb9e70e497ab",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 14267,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 14269,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "BP-ECS-Hosts"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "BP-SecurityGroups-1OEHITBS0P0YJ"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/BP-SecurityGroups-1OEHITBS0P0YJ/22ae8f10-07e2-11ea-9f97-0afd1207ca5c"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks/containers that run on them",
+   "GroupId": "sg-040d71efc83a1d3f1",
+   "GroupName": "intentionet-ui-SecurityGroups-14GP4XW1BSGHY-ECSHostSecurityGroup-U69KD5T2795O",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-07a973ce88e0cc3fc",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/intentionet-ui-SecurityGroups-14GP4XW1BSGHY/effc4a20-396c-11e8-82c5-50a68d01a6c5"
+    },
+    {
+     "Key": "Name",
+     "Value": "intentionet-ui-ECS-Hosts"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "intentionet-ui-SecurityGroups-14GP4XW1BSGHY"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the Elastic File System",
+   "GroupId": "sg-04297ac7e182fb8db",
+   "GroupName": "serviceNow-SecurityGroups-1CFFMABN171UI-EFSSecurityGroup-XEQDAIC7VXUC",
+   "IpPermissions": [
+    {
+     "FromPort": 2049,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 2049,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-0b498544cc1661b6f",
+       "UserId": "118292266645"
+      },
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/serviceNow-SecurityGroups-1CFFMABN171UI/2baf2850-d019-11e9-b8cc-02fe1b45cd0a"
+    },
+    {
+     "Key": "Name",
+     "Value": "serviceNow-EFS"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "serviceNow-SecurityGroups-1CFFMABN171UI"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "EFSSecurityGroup"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Group for SSH jump hosts",
+   "GroupId": "sg-048c1178",
+   "GroupName": "CustomerEssentialStack-SecurityGroups-BP8D5ODD9PUZ-BastionSecurityGroup-F8CHH4O9457",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "Customer-VPC-VPN"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "BastionSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "CustomerEssentialStack-SecurityGroups-BP8D5ODD9PUZ"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/CustomerEssentialStack-SecurityGroups-BP8D5ODD9PUZ/1fc1a400-e420-11e7-bc03-503f20f2adae"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-05575ed1268053e96",
+   "GroupName": "WideOpenWest-SecurityGroups-1VOL95O863ZDS-LoadBalancerSecurityGroup-1JL7ZM0Z4LYFZ",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "WideOpenWest-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/WideOpenWest-SecurityGroups-1VOL95O863ZDS/8d20a130-ff3b-11e9-b6b7-02e60452d3a4"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "WideOpenWest-SecurityGroups-1VOL95O863ZDS"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the Elastic File System",
+   "GroupId": "sg-05b6c92c780d6bd80",
+   "GroupName": "BP-SecurityGroups-1OEHITBS0P0YJ-EFSSecurityGroup-US0IBMJDU1Y4",
+   "IpPermissions": [
+    {
+     "FromPort": 2049,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 2049,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-03bf9f7e159317394",
+       "UserId": "118292266645"
+      },
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "BP-SecurityGroups-1OEHITBS0P0YJ"
+    },
+    {
+     "Key": "Name",
+     "Value": "BP-EFS"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "EFSSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/BP-SecurityGroups-1OEHITBS0P0YJ/22ae8f10-07e2-11ea-9f97-0afd1207ca5c"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-0639ffb9e70e497ab",
+   "GroupName": "BP-SecurityGroups-1OEHITBS0P0YJ-LoadBalancerSecurityGroup-2J3CFND4XKCR",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/BP-SecurityGroups-1OEHITBS0P0YJ/22ae8f10-07e2-11ea-9f97-0afd1207ca5c"
+    },
+    {
+     "Key": "Name",
+     "Value": "BP-LoadBalancers"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "BP-SecurityGroups-1OEHITBS0P0YJ"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-7 created 2018-03-14T23:32:37.202-07:00",
+   "GroupId": "sg-06d2a77de75b0d924",
+   "GroupName": "launch-wizard-7",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-072896c0d80cf8b47",
+   "GroupName": "point72-SecurityGroups-Y200AAOCP8GB-LoadBalancerSecurityGroup-XYIKMSZWZAH7",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "point72-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/point72-SecurityGroups-Y200AAOCP8GB/67938ed0-0a4b-11ea-bc39-069045656416"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "point72-SecurityGroups-Y200AAOCP8GB"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-4 created 2018-03-05T21:47:50.647-08:00",
+   "GroupId": "sg-07787393a93afbd3a",
+   "GroupName": "launch-wizard-4",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-07a973ce88e0cc3fc",
+   "GroupName": "intentionet-ui-SecurityGroups-14GP4XW1BSGHY-LoadBalancerSecurityGroup-18IQZ4CO5WQST",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "intentionet-ui-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "intentionet-ui-SecurityGroups-14GP4XW1BSGHY"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/intentionet-ui-SecurityGroups-14GP4XW1BSGHY/effc4a20-396c-11e8-82c5-50a68d01a6c5"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "SG test",
+   "GroupId": "sg-07fc3a32fc05b3a7b",
+   "GroupName": "GNS3-BGP-Test",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-07fc3a32fc05b3a7b",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Default"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 443,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "GNS3-BGP-Test-Dummy"
+    }
+   ],
+   "VpcId": "vpc-815775e7"
+  },
+  {
+   "Description": "Access to the Elastic File System",
+   "GroupId": "sg-082301fc68051a66a",
+   "GroupName": "point72-SecurityGroups-Y200AAOCP8GB-EFSSecurityGroup-5P5KGSAYFGBV",
+   "IpPermissions": [
+    {
+     "FromPort": 2049,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 2049,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      },
+      {
+       "GroupId": "sg-0aff19760b187afc8",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "EFSSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/point72-SecurityGroups-Y200AAOCP8GB/67938ed0-0a4b-11ea-bc39-069045656416"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "point72-SecurityGroups-Y200AAOCP8GB"
+    },
+    {
+     "Key": "Name",
+     "Value": "point72-EFS"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-3 created 2018-02-15T14:36:41.959-08:00",
+   "GroupId": "sg-089a575ef3305cd55",
+   "GroupName": "launch-wizard-3",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "This security group was generated by AWS Marketplace and is based on recommended settings for OpenVPN Access Server version 2.1.9 provided by OpenVPN Technologies Inc.",
+   "GroupId": "sg-0ac3fde56c6ed5ed4",
+   "GroupName": "OpenVPN Access Server-2.1.9-AutogenByAWSMP-",
+   "IpPermissions": [
+    {
+     "FromPort": 1194,
+     "IpProtocol": "udp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 1194,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 943,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 943,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 443,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks that run on them",
+   "GroupId": "sg-0aff19760b187afc8",
+   "GroupName": "point72-SecurityGroups-Y200AAOCP8GB-ECSHostSecurityGroup-1J7LV874NGGZJ",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-072896c0d80cf8b47",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 14267,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 14269,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "point72-ECS-Hosts"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/point72-SecurityGroups-Y200AAOCP8GB/67938ed0-0a4b-11ea-bc39-069045656416"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "point72-SecurityGroups-Y200AAOCP8GB"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks that run on them",
+   "GroupId": "sg-0b498544cc1661b6f",
+   "GroupName": "serviceNow-SecurityGroups-1CFFMABN171UI-ECSHostSecurityGroup-134WPWJ43WGI4",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-0ef3ccf9e4cfd012c",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 14267,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 14269,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "Name",
+     "Value": "serviceNow-ECS-Hosts"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "serviceNow-SecurityGroups-1CFFMABN171UI"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/serviceNow-SecurityGroups-1CFFMABN171UI/2baf2850-d019-11e9-b8cc-02fe1b45cd0a"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the Elastic File System",
+   "GroupId": "sg-0b51d2ada6b45f285",
+   "GroupName": "WideOpenWest-SecurityGroups-1VOL95O863ZDS-EFSSecurityGroup-JCRPBI0LONIK",
+   "IpPermissions": [
+    {
+     "FromPort": 2049,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 2049,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-007cd0055103fc7ac",
+       "UserId": "118292266645"
+      },
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/WideOpenWest-SecurityGroups-1VOL95O863ZDS/8d20a130-ff3b-11e9-b6b7-02e60452d3a4"
+    },
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "EFSSecurityGroup"
+    },
+    {
+     "Key": "Name",
+     "Value": "WideOpenWest-EFS"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "WideOpenWest-SecurityGroups-1VOL95O863ZDS"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks that run on them",
+   "GroupId": "sg-0d42590179346945c",
+   "GroupName": "twinBridges-SecurityGroups-1GAZJCKGR3J8G-ECSHostSecurityGroup-16ZRX24M1IJMN",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-01345d3266f7171f7",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-048c1178",
+       "UserId": "118292266645"
+      }
+     ]
+    },
+    {
+     "FromPort": 14267,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 14269,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/twinBridges-SecurityGroups-1GAZJCKGR3J8G/0ccfaad0-f5db-11e9-80d6-061773af76fc"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "twinBridges-SecurityGroups-1GAZJCKGR3J8G"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "Name",
+     "Value": "twinBridges-ECS-Hosts"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-8 created 2018-03-17T20:06:02.540-07:00",
+   "GroupId": "sg-0e7aeec2b5cbde6d1",
+   "GroupName": "launch-wizard-8",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "launch-wizard-10 created 2019-02-14T09:31:25.812-08:00",
+   "GroupId": "sg-0ec88f2435341db68",
+   "GroupName": "launch-wizard-10",
+   "IpPermissions": [
+    {
+     "FromPort": 9996,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Sage BF"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9997,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 8443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "IDP"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8443,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 5493,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Sage"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 5493,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-0ef3ccf9e4cfd012c",
+   "GroupName": "serviceNow-SecurityGroups-1CFFMABN171UI-LoadBalancerSecurityGroup-19XOEUKQZP6IG",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "batfish-service"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "serviceNow-SecurityGroups-1CFFMABN171UI"
+    },
+    {
+     "Key": "Name",
+     "Value": "serviceNow-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/serviceNow-SecurityGroups-1CFFMABN171UI/2baf2850-d019-11e9-b8cc-02fe1b45cd0a"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "launch-wizard-11 created 2019-02-20T18:36:33.687-08:00",
+   "GroupId": "sg-0f42046ab85370481",
+   "GroupName": "launch-wizard-11",
+   "IpPermissions": [
+    {
+     "FromPort": 9996,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Coordinator"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9997,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 80,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "SAML handler"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 80,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 8888,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Sage Notebook"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8888,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 8080,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "IDP"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8080,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 9443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "SAML handler"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9443,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 8443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "IDP"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8443,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 9090,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Vouch SSO (unused)"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 9090,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 5493,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "Sage Web UI"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 5493,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0",
+       "Description": "SAML handler or Web UI"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 443,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "launch-wizard-9 created 2018-09-25T11:45:36.210-07:00",
+   "GroupId": "sg-0f765b5bb0f043515",
+   "GroupName": "launch-wizard-9",
+   "IpPermissions": [
+    {
+     "FromPort": 3389,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3389,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "launch-wizard-1 created 2018-09-11T14:40:27.633-07:00",
+   "GroupId": "sg-0fdba0a2300909f3d",
+   "GroupName": "launch-wizard-1",
+   "IpPermissions": [
+    {
+     "FromPort": 8888,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 8888,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-1078c06c",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-1078c06c",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Created from the RDS Management Console: 2018/01/24 02:36:13",
+   "GroupId": "sg-1e29c961",
+   "GroupName": "rds-launch-wizard",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "96.74.30.201/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-2f9f3f53",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-2f9f3f53",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-6ee90d17"
+  },
+  {
+   "Description": "launch-wizard-2 created 2017-12-08T12:25:12.456-08:00",
+   "GroupId": "sg-486ec434",
+   "GroupName": "launch-wizard-2",
+   "IpPermissions": [
+    {
+     "FromPort": 22,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 22,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "ElasticSearch-jumphost-sg"
+    }
+   ],
+   "VpcId": "vpc-6ee90d17"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-55510831",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "10.193.0.0/16",
+       "Description": "Internal traffic"
+      },
+      {
+       "CidrIp": "107.170.243.58/32",
+       "Description": "inentionet-test"
+      },
+      {
+       "CidrIp": "104.236.156.171/32",
+       "Description": "intentionet-dev"
+      },
+      {
+       "CidrIp": "162.243.144.192/32",
+       "Description": "intentionet-web"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": [
+      {
+       "Description": "jump host",
+       "GroupId": "sg-cf3f86b3",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "Default+RDS-sg"
+    }
+   ],
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Security Group for ES in VPC",
+   "GroupId": "sg-6063c31c",
+   "GroupName": "esinvpc",
+   "IpPermissions": [
+    {
+     "FromPort": 80,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 80,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 443,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "ElasticSearch-sg"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/Elasticsearch-Cluster/f96057f0-dac6-11e7-a70f-503a90a9c4d1"
+    },
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "Elasticsearch-Cluster"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "mySecurityGroup"
+    }
+   ],
+   "VpcId": "vpc-6ee90d17"
+  },
+  {
+   "Description": "Web UI loadbalancer",
+   "GroupId": "sg-68023614",
+   "GroupName": "batfish_web_ui-sg",
+   "IpPermissions": [
+    {
+     "FromPort": 80,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [
+      {
+       "CidrIpv6": "::/0"
+      }
+     ],
+     "PrefixListIds": [],
+     "ToPort": 80,
+     "UserIdGroupPairs": []
+    },
+    {
+     "FromPort": 443,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [
+      {
+       "CidrIpv6": "::/0"
+      }
+     ],
+     "PrefixListIds": [],
+     "ToPort": 443,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Created from the RDS Management Console: 2018/01/24 02:36:33",
+   "GroupId": "sg-9e27c7e1",
+   "GroupName": "rds-launch-wizard-1",
+   "IpPermissions": [
+    {
+     "FromPort": 3306,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "96.74.30.201/32"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "ToPort": 3306,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "default VPC security group",
+   "GroupId": "sg-adcd87d0",
+   "GroupName": "default",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "GNS3-BGP-Test-Default"
+    }
+   ],
+   "VpcId": "vpc-815775e7"
+  },
+  {
+   "Description": "Access to the load balancer that sits in front of ECS",
+   "GroupId": "sg-cf08dab0",
+   "GroupName": "Dashboard-Stack-SecurityGroups-163B87DM6UXOK-LoadBalancerSecurityGroup-1BI3S8UR1DR3W",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "Dashboard-Stack-SecurityGroups-163B87DM6UXOK"
+    },
+    {
+     "Key": "Name",
+     "Value": "Dashboard-Stack-LoadBalancers"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "LoadBalancerSecurityGroup"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/Dashboard-Stack-SecurityGroups-163B87DM6UXOK/217d2f40-0986-11e8-8675-50a68a0e32ba"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  },
+  {
+   "Description": "Security group for RDS tunneling server",
+   "GroupId": "sg-cf3f86b3",
+   "GroupName": "RDS-Access-SG",
+   "IpPermissions": [
+    {
+     "FromPort": 0,
+     "IpProtocol": "tcp",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [
+      {
+       "CidrIpv6": "::/0"
+      }
+     ],
+     "PrefixListIds": [],
+     "ToPort": 65535,
+     "UserIdGroupPairs": []
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "RDS-jumphost-sg"
+    }
+   ],
+   "VpcId": "vpc-f8fad69d"
+  },
+  {
+   "Description": "Access to the ECS hosts and the tasks/containers that run on them",
+   "GroupId": "sg-e00bd99f",
+   "GroupName": "Dashboard-Stack-SecurityGroups-163B87DM6UXOK-ECSHostSecurityGroup-1CICHIF4C87JO",
+   "IpPermissions": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": [
+      {
+       "GroupId": "sg-cf08dab0",
+       "UserId": "118292266645"
+      }
+     ]
+    }
+   ],
+   "IpPermissionsEgress": [
+    {
+     "IpProtocol": "-1",
+     "IpRanges": [
+      {
+       "CidrIp": "0.0.0.0/0"
+      }
+     ],
+     "Ipv6Ranges": [],
+     "PrefixListIds": [],
+     "UserIdGroupPairs": []
+    }
+   ],
+   "OwnerId": "118292266645",
+   "Tags": [
+    {
+     "Key": "aws:cloudformation:stack-name",
+     "Value": "Dashboard-Stack-SecurityGroups-163B87DM6UXOK"
+    },
+    {
+     "Key": "aws:cloudformation:logical-id",
+     "Value": "ECSHostSecurityGroup"
+    },
+    {
+     "Key": "Name",
+     "Value": "Dashboard-Stack-ECS-Hosts"
+    },
+    {
+     "Key": "aws:cloudformation:stack-id",
+     "Value": "arn:aws:cloudformation:us-west-2:118292266645:stack/Dashboard-Stack-SecurityGroups-163B87DM6UXOK/217d2f40-0986-11e8-8675-50a68a0e32ba"
+    }
+   ],
+   "VpcId": "vpc-6f6f8316"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "Vpcs": [
+  {
+   "CidrBlock": "10.198.100.0/24",
+   "CidrBlockAssociationSet": [
+    {
+     "AssociationId": "vpc-cidr-assoc-a2e108ca",
+     "CidrBlock": "10.198.100.0/24",
+     "CidrBlockState": {
+      "State": "associated"
+     }
+    }
+   ],
+   "DhcpOptionsId": "dopt-ad6e93c8",
+   "InstanceTenancy": "default",
+   "IsDefault": false,
+   "OwnerId": "118292266645",
+   "State": "available",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "ElasticsearchVPC"
+    }
+   ],
+   "VpcId": "vpc-23b7a947"
+  },
+  {
+   "CidrBlock": "10.0.0.0/16",
+   "CidrBlockAssociationSet": [
+    {
+     "AssociationId": "vpc-cidr-assoc-7b2f0812",
+     "CidrBlock": "10.0.0.0/16",
+     "CidrBlockState": {
+      "State": "associated"
+     }
+    }
+   ],
+   "DhcpOptionsId": "dopt-ad6e93c8",
+   "InstanceTenancy": "default",
+   "IsDefault": false,
+   "OwnerId": "118292266645",
+   "State": "available",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "ratultest"
+    }
+   ],
+   "VpcId": "vpc-1dc49479"
+  },
+  {
+   "CidrBlock": "10.200.0.0/24",
+   "CidrBlockAssociationSet": [
+    {
+     "AssociationId": "vpc-cidr-assoc-03a5a6d1be744f9a8",
+     "CidrBlock": "10.200.0.0/24",
+     "CidrBlockState": {
+      "State": "associated"
+     }
+    }
+   ],
+   "DhcpOptionsId": "dopt-ad6e93c8",
+   "InstanceTenancy": "default",
+   "IsDefault": false,
+   "OwnerId": "118292266645",
+   "State": "available",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "visa-demo"
+    }
+   ],
+   "VpcId": "vpc-045e0f052b4860185"
+  },
+  {
+   "CidrBlock": "172.31.0.0/16",
+   "CidrBlockAssociationSet": [
+    {
+     "AssociationId": "vpc-cidr-assoc-87de30ee",
+     "CidrBlock": "172.31.0.0/16",
+     "CidrBlockState": {
+      "State": "associated"
+     }
+    }
+   ],
+   "DhcpOptionsId": "dopt-ad6e93c8",
+   "InstanceTenancy": "default",
+   "IsDefault": true,
+   "OwnerId": "118292266645",
+   "State": "available",
+   "Tags": [
+    {
+     "Key": "Name",
+     "Value": "Default (RDS) VPC"
+    },
+    {
+     "Key": "Project",
+     "Value": "RDS|batfish-service"
+    }
+   ],
+   "VpcId": "vpc-72850617"
+  }
+ ]
+}

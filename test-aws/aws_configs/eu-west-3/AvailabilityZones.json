@@ -1,0 +1,25 @@
+{
+ "AvailabilityZones": [
+  {
+   "Messages": [],
+   "RegionName": "eu-west-3",
+   "State": "available",
+   "ZoneId": "euw3-az1",
+   "ZoneName": "eu-west-3a"
+  },
+  {
+   "Messages": [],
+   "RegionName": "eu-west-3",
+   "State": "available",
+   "ZoneId": "euw3-az2",
+   "ZoneName": "eu-west-3b"
+  },
+  {
+   "Messages": [],
+   "RegionName": "eu-west-3",
+   "State": "available",
+   "ZoneId": "euw3-az3",
+   "ZoneName": "eu-west-3c"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "DomainStatusList": [
+  {
+   "ARN": "arn:aws:es:us-west-1:118292266645:domain/elasticsearch-nc",
+   "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-1:118292266645:domain/elasticsearch-nc/*\"}]}",
+   "AdvancedOptions": {
+    "rest.action.multi.allow_explicit_index": "true"
+   },
+   "CognitoOptions": {
+    "Enabled": false
+   },
+   "Created": true,
+   "Deleted": false,
+   "DomainEndpointOptions": {
+    "EnforceHTTPS": false,
+    "TLSSecurityPolicy": "Policy-Min-TLS-1-0-2019-07"
+   },
+   "DomainId": "118292266645/elasticsearch-nc",
+   "DomainName": "elasticsearch-nc",
+   "EBSOptions": {
+    "EBSEnabled": true,
+    "VolumeSize": 10,
+    "VolumeType": "gp2"
+   },
+   "ElasticsearchClusterConfig": {
+    "DedicatedMasterEnabled": false,
+    "InstanceCount": 2,
+    "InstanceType": "m3.medium.elasticsearch",
+    "ZoneAwarenessEnabled": false
+   },
+   "ElasticsearchVersion": "5.5",
+   "EncryptionAtRestOptions": {
+    "Enabled": false
+   },
+   "Endpoints": {
+    "vpc": "vpc-elasticsearch-nc-obfh6hqijohtbtj5o6vyshg32a.us-west-1.es.amazonaws.com"
+   },
+   "NodeToNodeEncryptionOptions": {
+    "Enabled": false
+   },
+   "Processing": false,
+   "ServiceSoftwareOptions": {
+    "AutomatedUpdateDate": "2019-11-12 23:57:46-08:00",
+    "Cancellable": false,
+    "CurrentVersion": "R20190927-P3",
+    "Description": "There is no software update available for this domain.",
+    "NewVersion": "",
+    "UpdateAvailable": false,
+    "UpdateStatus": "COMPLETED"
+   },
+   "SnapshotOptions": {
+    "AutomatedSnapshotStartHour": 0
+   },
+   "UpgradeProcessing": false,
+   "VPCOptions": {
+    "AvailabilityZones": [
+     "us-west-1a"
+    ],
+    "SecurityGroupIds": [
+     "sg-742a2912"
+    ],
+    "SubnetIds": [
+     "subnet-3e3b8359"
+    ],
+    "VPCId": "vpc-23b7a947"
+   }
+  }
+ ]
+}
